@@ -58,3 +58,5 @@ target_include_directories(iris-lama PUBLIC ${PROJECT_SOURCE_DIR}/include)
 target_compile_options(iris-lama PRIVATE -Wall)
 
 
+install(TARGETS iris-lama
+    DESTINATION lib/${PROJECT_NAME})
