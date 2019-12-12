@@ -59,4 +59,7 @@ target_compile_options(iris-lama PRIVATE -Wall)
 
 
 install(TARGETS iris-lama
-    DESTINATION lib/${PROJECT_NAME})
+    ARCHIVE DESTINATION lib/${PROJECT_NAME}
+    LIBRARY DESTINATION lib/${PROJECT_NAME}
+    RUNTIME DESTINATION bin/${PROJECT_NAME}
+)
