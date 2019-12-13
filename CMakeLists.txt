@@ -18,7 +18,7 @@ endif()
 
 add_subdirectory(src)
 
-export(TARGETS iris-lama FILE ${CMAKE_INSTALL_PREFIX}/share/${PROJECT_NAME}/cmake/iris_lamaConfig.cmake)
+export(TARGETS iris-lama FILE share/${PROJECT_NAME}/cmake/iris_lamaConfig.cmake)
 
 set(CMAKE_EXPORT_PACKAGE_REGISTRY ON)
 export(PACKAGE iris_lama)
