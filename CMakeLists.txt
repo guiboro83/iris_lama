@@ -15,10 +15,15 @@ if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
 
+find_package(catkin REQUIRED)
+
+catkin_package(
+  INCLUDE_DIRS include
+)
 
 add_subdirectory(src)
 
-export(TARGETS iris-lama FILE ${CMAKE_INSTALL_PREFIX}/share/${PROJECT_NAME}/iris_lamaConfig.cmake)
+#export(TARGETS iris-lama FILE ${CMAKE_INSTALL_PREFIX}/share/${PROJECT_NAME}/iris_lamaConfig.cmake)
 
 set(CMAKE_EXPORT_PACKAGE_REGISTRY ON)
 export(PACKAGE iris_lama)
